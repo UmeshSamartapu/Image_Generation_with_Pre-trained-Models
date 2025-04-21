@@ -1,0 +1,5 @@
+.env
+_pycache
+__pycache__/
+static/generatuons/*
+venv/

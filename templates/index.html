@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CIS - Stable Diffusion WebUI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="glass-card">
+            <header class="app-header">
+                <i class="fas fa-palette header-icon"></i>
+                <h1 class="title">Creative Image Studio</h1>
+                <p class="subtitle">Transform Ideas into Visual Masterpieces</p>
+            </header>
+
+            <!-- Fixed form action -->
+            <form method="post" action="/generate" class="generator-form">
+                <div class="form-group floating-input">
+                    <textarea id="prompt" name="prompt" rows="4" required>{{ prompt }}</textarea>
+                    <label for="prompt"><i class="fas fa-comment-dots"></i> Creative Prompt</label>
+                </div>
+
+                <div class="advanced-settings">
+                    <h3 class="settings-title"><i class="fas fa-sliders-h"></i> Advanced Parameters</h3>
+                    <div class="form-group">
+                        <div class="parameter-group">
+                            <label for="steps"><i class="fas fa-footstep"></i> Generation Steps</label>
+                            <input type="number" id="steps" name="steps" value="50" min="20" max="100">
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="glow-button">
+                    <span class="button-content">
+                        <i class="fas fa-magic"></i>
+                        Generate Artwork
+                    </span>
+                </button>
+            </form>
+
+            <!-- Add this section below the image preview -->
+            {% if image_url %}
+            <section class="result-container">
+                <h2 class="result-title"><i class="fas fa-image"></i> Generated Artwork</h2>
+                <div class="image-preview">
+                    <img src="{{ image_url }}?t={{ timestamp }}" alt="AI Generated Image" class="generated-image">
+                    <div class="image-overlay">
+                        <a href="{{ image_url }}" download class="download-btn">
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="generation-info">
+                    <p><i class="fas fa-stopwatch"></i> Generation Time: {{ generation_time }}</p>
+                    <p><i class="fas fa-calendar-alt"></i> Created: {{ timestamp }}</p>
+                </div>
+            </section>
+            {% endif %}
+
+            {% if error %}
+            <div class="error-message">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

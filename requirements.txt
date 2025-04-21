@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+diffusers
+transformers
+accelerate
+safetensors
+torch
+torchvision 
+torchaudio
+python-dotenv
+python-multipart
+huggingface_hub
