@@ -88,7 +88,7 @@ stable-diffusion-api/
 
 - FastAPI community
 
-- Maintainer: https://github.com/UmeshSamartapu
+- Maintainer: ![Umesh samartapu](https://github.com/UmeshSamartapu)
 
 ## Demo 
 ### You can watch the ([youtube video](   )) for demo
