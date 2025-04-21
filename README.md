@@ -1,6 +1,6 @@
 # AI Image Generation API with Stable Diffusion
 
-![Generated Example]( https://github.com/UmeshSamartapu/Image_Generation_with_Pre-trained-Models_ProdigyInfoTech/blob/main/static/Creative%20Image%20Studio%20pic.png )
+![Generated Example](https://github.com/UmeshSamartapu/Image_Generation_with_Pre-trained-Models_ProdigyInfoTech/blob/main/static/Creative%20Image%20Studio%20pic.png)
 
 A FastAPI-powered service for generating images from text prompts using Stable Diffusion v1.4/1.5 from Hugging Face.
 
