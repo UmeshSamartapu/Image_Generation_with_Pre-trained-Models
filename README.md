@@ -93,7 +93,7 @@ stable-diffusion-api/
 ## Demo 
 ### You can watch the ([youtube video](   )) for demo
 <p align="center">
-  <img src=" https://github.com/UmeshSamartapu/Image_Generation_with_Pre-trained-Models_ProdigyInfoTech/blob/main/static/Creative%20Image%20Studio_Gif.gif " />
+  <img src="https://github.com/UmeshSamartapu/Image_Generation_with_Pre-trained-Models_ProdigyInfoTech/blob/main/static/Creative%20Image%20Studio_Gif.gif" />
 </p>
 
 
