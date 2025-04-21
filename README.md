@@ -1,4 +1,4 @@
-# AI Image Generation API with Stable Diffusion
+# Image Generation with Pre-trained Models
 
 ![Generated Example](https://github.com/UmeshSamartapu/Image_Generation_with_Pre-trained-Models_ProdigyInfoTech/blob/main/static/Creative%20Image%20Studio%20pic.png)
 
